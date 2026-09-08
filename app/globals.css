@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Baloo 2", system-ui, sans-serif;
+  --font-body: "Nunito", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+
+  body {
+    @apply overflow-x-clip bg-cream text-ink font-sans antialiased;
+    background-image:
+      radial-gradient(120% 60% at 100% 0%, rgba(255, 226, 154, 0.4) 0%, rgba(255, 249, 239, 0) 55%),
+      radial-gradient(90% 50% at 0% 12%, rgba(205, 232, 246, 0.35) 0%, rgba(255, 249, 239, 0) 60%);
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3, h4, h5 {
+    @apply font-display font-extrabold tracking-tight text-ink;
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background: theme("colors.sun.light");
+    color: theme("colors.ink.DEFAULT");
+  }
+
+  :focus-visible {
+    outline: 3px solid theme("colors.sky.dark");
+    outline-offset: 3px;
+    border-radius: 0.75rem;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full
+      px-7 py-3.5 font-display text-base font-bold transition-all duration-300
+      focus-visible:outline-offset-4 disabled:opacity-60;
+  }
+
+  .btn-primary {
+    @apply btn bg-coral text-white shadow-pill hover:-translate-y-0.5 hover:bg-coral-dark;
+  }
+
+  .btn-secondary {
+    @apply btn bg-white text-ink shadow-soft ring-1 ring-ink/5 hover:-translate-y-0.5 hover:bg-cream-50;
+  }
+
+  .btn-ghost {
+    @apply btn bg-ink/5 text-ink hover:bg-ink/10;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-1.5
+      font-display text-sm font-bold uppercase tracking-wide text-ink-soft
+      shadow-soft ring-1 ring-ink/5;
+  }
+
+  .card {
+    @apply rounded-4xl bg-white p-7 shadow-soft ring-1 ring-ink/5 transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply hover:-translate-y-1.5 hover:shadow-soft-lg;
+  }
+
+  .section {
+    @apply relative overflow-x-clip py-20 sm:py-28;
+  }
+
+  /* Textura sutil de papel quadriculado, como no template de referência */
+  .dotgrid {
+    background-image:
+      linear-gradient(rgba(44, 58, 75, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(44, 58, 75, 0.04) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+
+  /* Recorte orgânico para "fotos" (aqui, ilustrações) */
+  .mask-blob {
+    -webkit-mask-image: radial-gradient(circle, #000 100%, transparent 100%);
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

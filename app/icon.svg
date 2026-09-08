@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#FFF9EF"/>
+  <g transform="translate(32 40)">
+    <g fill="none">
+      <g transform="rotate(46) translate(0 -3)">
+        <path d="M-4 0 H4 V-30 H-4 Z" fill="#E63329"/>
+        <path d="M-4 -30 H4 L0 -37 Z" fill="#F1D6AC"/>
+        <path d="M-1.6 -34.5 H1.6 L0 -37 Z" fill="#3B3B3B"/>
+      </g>
+      <g transform="rotate(15) translate(0 -3)">
+        <path d="M-4 0 H4 V-30 H-4 Z" fill="#F6C90E"/>
+        <path d="M-4 -30 H4 L0 -37 Z" fill="#F1D6AC"/>
+        <path d="M-1.6 -34.5 H1.6 L0 -37 Z" fill="#3B3B3B"/>
+      </g>
+      <g transform="rotate(-15) translate(0 -3)">
+        <path d="M-4 0 H4 V-30 H-4 Z" fill="#F6C90E"/>
+        <path d="M-4 -30 H4 L0 -37 Z" fill="#F1D6AC"/>
+        <path d="M-1.6 -34.5 H1.6 L0 -37 Z" fill="#3B3B3B"/>
+      </g>
+      <g transform="rotate(-46) translate(0 -3)">
+        <path d="M-4 0 H4 V-30 H-4 Z" fill="#E63329"/>
+        <path d="M-4 -30 H4 L0 -37 Z" fill="#F1D6AC"/>
+        <path d="M-1.6 -34.5 H1.6 L0 -37 Z" fill="#3B3B3B"/>
+      </g>
+      <g transform="rotate(31) translate(0 -3)">
+        <path d="M-4 0 H4 V-30 H-4 Z" fill="#F07C1E"/>
+        <path d="M-4 -30 H4 L0 -37 Z" fill="#F1D6AC"/>
+      </g>
+      <g transform="rotate(-31) translate(0 -3)">
+        <path d="M-4 0 H4 V-30 H-4 Z" fill="#F07C1E"/>
+        <path d="M-4 -30 H4 L0 -37 Z" fill="#F1D6AC"/>
+      </g>
+      <g transform="rotate(2) translate(0 -3)">
+        <path d="M-4 0 H4 V-30 H-4 Z" fill="#7DBE3C"/>
+        <path d="M-4 -30 H4 L0 -37 Z" fill="#F1D6AC"/>
+      </g>
+    </g>
+  </g>
+</svg>
